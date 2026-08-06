@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+
+
+<div class="row py-5">
+
+    <div class="col-sm-8 mx-auto">
+
+        <div class="card shadow rounded-4 overflow-hidden"></div>
+
+            <img src="{% static 'images/pizza.jpg' %}" 
+            class="card-img-top">
+
+
+            <div class="card-body text-center">
+
+                <h1 class="fw-bold">
+                    Special Cheese Pizza
+                </h1>
+
+
+                <p class="fs-5">
+                    A delicious pizza prepared with fresh ingredients,
+                    extra cheese and special chef recipe.
+                </p>
+
+
+                <h3 class="text-danger">
+                    Price: ₹299
+                </h3>
+
+
+                <h5 class="mt-4">
+                    Ingredients
+                </h5>
+
+                <p>
+                    Cheese, Tomato, Capsicum, Onion, 
+                    Fresh Herbs and Special Sauce
+                </p>
+
+
+                <a href="/booktable/" 
+                  class="btn btn-danger btn-lg">
+                        Book Table
+                </a>
+
+                <a href="/menu/" 
+                  class="btn btn-warning btn-lg">
+                        Back To Menu
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

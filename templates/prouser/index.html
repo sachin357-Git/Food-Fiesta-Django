@@ -1,0 +1,370 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block childpage %}
+<div class="row">
+    <div class="col-sm-12 p-0">
+        <div class="hero"
+        style="
+        background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+        url('{% static "images/restaurant.jpg" %}');
+        height:650px;
+        background-size:cover;
+        background-position:center;
+        ">
+
+            <div class="text-center text-light hero-content">
+                <h1 class="display-3 fw-bold mt-5 text-light">
+                    Welcome To Food Fiesta
+                </h1>
+
+                <p class="fs-4">
+                    Delicious Food, Amazing Taste & Memorable Moments
+                </p>
+
+                <a href="/menu/" class="btn btn-warning btn-lg mt-3">
+                    Explore Menu
+                </a>
+
+                <a href="/booktable/" class="btn btn-danger btn-lg mt-3">
+                    Book Table
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Hero Section End -->
+ <!-- Why Choose Us Start -->
+
+<div class="row py-5 text-center">
+    <div class="col-sm-10 mx-auto">
+        
+        <h1 class="fw-bold">
+            Why Choose Us
+        </h1>
+
+        <p>
+            We provide delicious food with excellent service and a memorable dining experience.
+        </p>
+
+        <div class="row mt-4">
+
+            <div class="col-sm-3 p-3">
+                <div class="card shadow p-3 choose-card">
+                    <i class="fa-solid fa-utensils fs-1 text-danger"></i>
+                    <h4 class="mt-3">Quality Food</h4>
+                    <p>
+                        Fresh ingredients and amazing taste in every dish.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 p-3">
+                <div class="card shadow p-3 choose-card">
+                    <i class="fa-solid fa-user fs-1 text-danger"></i>
+                    <h4 class="mt-3">Expert Chefs</h4>
+                    <p>
+                        Experienced chefs prepare food with perfection.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 p-3">
+                <div class="card shadow p-3 choose-card">
+                    <i class="fa-solid fa-clock fs-1 text-danger"></i>
+                    <h4 class="mt-3">Fast Service</h4>
+                    <p>
+                        Quick service with a comfortable atmosphere.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 p-3">
+                <div class="card shadow p-3 choose-card">
+                    <i class="fa-solid fa-heart fs-1 text-danger"></i>
+                    <h4 class="mt-3">Customer Love</h4>
+                    <p>
+                        Our customers are our biggest priority.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Why Choose Us End -->
+ <!-- Popular Dishes Start -->
+
+<div class="row py-5 bg-light">
+    <div class="col-sm-10 mx-auto">
+
+        <h1 class="text-center fw-bold">
+            Popular Dishes
+        </h1>
+
+        <p class="text-center">
+            Explore our most loved and delicious dishes.
+        </p>
+
+        <div class="row mt-4">
+
+            <div class="col-sm-3 p-2">
+                <div class="card shadow food-card">
+                    <img src="{% static 'images/pizza.jpg' %}" 
+                    class="card-img-top" height="200">
+
+                    <div class="card-body text-center">
+                        <h4>Italian Pizza</h4>
+                        <p>Cheesy and delicious pizza with fresh toppings.</p>
+                        <h5 class="text-danger">₹299</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 p-2">
+                <div class="card shadow food-card">
+                    <img src="{% static 'images/burger.jpg' %}" 
+                    class="card-img-top" height="200">
+
+                    <div class="card-body text-center">
+                        <h4>Special Burger</h4>
+                        <p>Fresh burger with amazing taste.</p>
+                        <h5 class="text-danger">₹199</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 p-2">
+                <div class="card shadow food-card">
+                    <img src="{% static 'images/pasta.jpg' %}" 
+                    class="card-img-top" height="200">
+
+                    <div class="card-body text-center">
+                        <h4>White Sauce Pasta</h4>
+                        <p>Creamy pasta prepared by our chefs.</p>
+                        <h5 class="text-danger">₹249</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 p-2">
+                <div class="card shadow food-card">
+                    <img src="{% static 'images/biryani.jpg' %}" 
+                    class="card-img-top" height="200">
+
+                    <div class="card-body text-center">
+                        <h4>Royal Biryani</h4>
+                        <p>Traditional taste with rich flavours.</p>
+                        <h5 class="text-danger">₹349</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Popular Dishes End -->
+ <!-- Special Menu Start -->
+
+<div class="row py-5">
+    <div class="col-sm-10 mx-auto">
+
+        <h1 class="text-center fw-bold">
+            Our Special Menu
+        </h1>
+
+        <p class="text-center">
+            Taste the best dishes prepared specially for you.
+        </p>
+
+        <div class="row mt-4">
+
+            <div class="col-sm-4 p-3">
+                <div class="card shadow text-center p-3">
+                    <i class="fa-solid fa-pizza-slice text-danger fs-1"></i>
+                    <h3 class="mt-3">Fast Food</h3>
+                    <p>
+                        Pizza, Burger, Sandwich and many more delicious items.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4 p-3">
+                <div class="card shadow text-center p-3">
+                    <i class="fa-solid fa-bowl-food text-danger fs-1"></i>
+                    <h3 class="mt-3">Main Course</h3>
+                    <p>
+                        Indian dishes, biryani and chef special meals.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4 p-3">
+                <div class="card shadow text-center p-3">
+                    <i class="fa-solid fa-ice-cream text-danger fs-1"></i>
+                    <h3 class="mt-3">Desserts</h3>
+                    <p>
+                        Sweet desserts and refreshing beverages.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Special Menu End -->
+ <!-- Gallery Start -->
+
+<div class="row py-5 bg-light">
+    <div class="col-sm-10 mx-auto">
+
+        <h1 class="text-center fw-bold">
+            Our Gallery
+        </h1>
+
+        <p class="text-center">
+            A glimpse of our delicious food and beautiful restaurant.
+        </p>
+
+
+        <div class="row mt-4">
+
+            <div class="col-sm-3 p-2">
+                <img src="{% static 'images/gallery1.jpg' %}" 
+                class="img-fluid rounded shadow"
+                height="250">
+            </div>
+
+
+            <div class="col-sm-3 p-2">
+                <img src="{% static 'images/gallery2.jpg' %}" 
+                class="img-fluid rounded shadow"
+                height="250">
+            </div>
+
+
+            <div class="col-sm-3 p-2">
+                <img src="{% static 'images/gallery3.jpg' %}" 
+                class="img-fluid rounded shadow"
+                height="250">
+            </div>
+
+
+            <div class="col-sm-3 p-2">
+                <img src="{% static 'images/gallery4.jpg' %}" 
+                class="img-fluid rounded shadow"
+                height="250">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Gallery End -->
+ <!-- Customer Reviews Start -->
+
+<div class="row py-5">
+    <div class="col-sm-10 mx-auto">
+
+        <h1 class="text-center fw-bold">
+            Customer Reviews
+        </h1>
+
+        <p class="text-center">
+            What our customers say about our food and service.
+        </p>
+
+
+        <div class="row mt-4">
+
+            <div class="col-sm-4 p-3">
+                <div class="card shadow p-4 text-center">
+                    <i class="fa-solid fa-user-circle fs-1 text-danger"></i>
+                    <h4 class="mt-3">Rahul Sharma</h4>
+                    <p>
+                        "Amazing food and excellent service. 
+                        Highly recommended!"
+                    </p>
+
+                    <div class="text-warning">
+                        ★ ★ ★ ★ ★
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4 p-3">
+                <div class="card shadow p-4 text-center">
+                    <i class="fa-solid fa-user-circle fs-1 text-danger"></i>
+                    <h4 class="mt-3">Priya Singh</h4>
+                    <p>
+                        "Beautiful restaurant with delicious dishes."
+                    </p>
+
+                    <div class="text-warning">
+                        ★ ★ ★ ★ ★
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-4 p-3">
+                <div class="card shadow p-4 text-center">
+                    <i class="fa-solid fa-user-circle fs-1 text-danger"></i>
+                    <h4 class="mt-3">Amit Verma</h4>
+                    <p>
+                        "Great taste, fast service and friendly staff."
+                    </p>
+
+                    <div class="text-warning">
+                        ★ ★ ★ ★ ★
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Customer Reviews End -->
+ <!-- Book Table Start -->
+
+<div class="row py-5 text-light text-center booking-cta">
+
+    <div class="col-sm-10 mx-auto">
+
+        <h1 class="fw-bold text-light">
+            Reserve Your Table
+        </h1>
+
+        <p class="fs-5">
+            Book your table now and enjoy delicious food with your loved ones.
+        </p>
+
+        <a href="/booktable/" class="btn btn-warning btn-lg mt-3">
+            Book A Table
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Book Table End -->
+{% endblock %}

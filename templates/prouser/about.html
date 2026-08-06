@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+
+<div class="row py-5">
+
+    <div class="col-sm-10 mx-auto">
+
+        <div class="row align-items-center">
+
+
+            <div class="col-sm-6">
+
+                <img src="{% static 'images/restaurant.jpg' %}"
+                class="img-fluid rounded shadow">
+
+            </div>
+
+
+            <div class="col-sm-6">
+
+                <h1 class="fw-bold">
+                    About Food Fiesta
+                </h1>
+
+                <p class="fs-5">
+                    Welcome to Food Fiesta, where delicious food meets
+                    great hospitality. We serve freshly prepared dishes
+                    with quality ingredients and authentic taste.
+                </p>
+
+
+                <p>
+                    Our mission is to provide our customers with a
+                    memorable dining experience through amazing food,
+                    excellent service and a comfortable atmosphere.
+                </p>
+
+
+                <div class="mt-4">
+
+                    <h4>
+                        <i class="fa-solid fa-check text-danger"></i>
+                        Fresh Ingredients
+                    </h4>
+
+                    <h4>
+                        <i class="fa-solid fa-check text-danger"></i>
+                        Experienced Chefs
+                    </h4>
+
+                    <h4>
+                        <i class="fa-solid fa-check text-danger"></i>
+                        Best Quality Food
+                    </h4>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

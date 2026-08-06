@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+
+<div class="row py-5">
+
+    <div class="col-sm-8 mx-auto">
+
+        <h1 class="text-center fw-bold">
+            Customer Feedback
+        </h1>
+
+        {% if messages %}
+        {% for message in messages %}
+
+        <div class="alert alert-success text-center">
+             {{message}}
+        </div>
+
+        {% endfor %}
+        {% endif %}
+
+        <p class="text-center">
+            Share your experience with Food Fiesta.
+        </p>
+
+
+        <div class="card shadow p-4 mt-4">
+
+            <form method="post">
+                {% csrf_token %}
+
+                <input type="text"
+                class="form-control"
+                name="name"
+                placeholder="Your Name">
+
+
+                <input type="email"
+                class="form-control"
+                name="email"
+                placeholder="Your Email">
+
+
+                <select class="form-control"
+                name="rating">
+
+                    <option>
+                        Select Rating
+                    </option>
+
+                    <option>
+                        ⭐⭐⭐⭐⭐ Excellent
+                    </option>
+
+                    <option>
+                        ⭐⭐⭐⭐ Very Good
+                    </option>
+
+                    <option>
+                        ⭐⭐⭐ Good
+                    </option>
+
+                </select>
+
+
+                <textarea class="form-control txta"
+                name="message"
+                placeholder="Write Your Feedback"></textarea>
+
+
+                <div class="text-center">
+
+                    <button type="submit" class="btn btn-warning px-5">
+                        Submit Feedback
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+{% endblock %}

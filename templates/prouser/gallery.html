@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+
+<div class="row py-5">
+
+    <div class="col-sm-10 mx-auto">
+
+        <h1 class="text-center fw-bold">
+            Our Food Gallery
+        </h1>
+
+        <p class="text-center">
+            Explore our delicious food and beautiful restaurant moments.
+        </p>
+
+        <div class="text-center mb-3">
+            <span class="badge bg-danger fs-6">
+                Taste • Quality • Happiness
+            </span>
+        </div>
+
+
+        <div class="row mt-4">
+
+
+            <div class="col-sm-4 p-2">
+                <img src="{% static 'images/gallery1.jpg' %}"
+                class="img-fluid rounded shadow gallery-img">
+            </div>
+
+
+            <div class="col-sm-4 p-2">
+                <img src="{% static 'images/gallery2.jpg' %}"
+                class="img-fluid rounded shadow gallery-img">
+            </div>
+
+
+            <div class="col-sm-4 p-2">
+                <img src="{% static 'images/gallery3.jpg' %}"
+                class="img-fluid rounded shadow gallery-img">
+            </div>
+
+
+            <div class="col-sm-4 p-2">
+                <img src="{% static 'images/gallery4.jpg' %}"
+                class="img-fluid rounded shadow gallery-img">
+            </div>
+
+
+            <div class="col-sm-4 p-2">
+                <img src="{% static 'images/pizza.jpg' %}"
+                class="img-fluid rounded shadow gallery-img">
+            </div>
+
+
+            <div class="col-sm-4 p-2">
+                <img src="{% static 'images/biryani.jpg' %}"
+                class="img-fluid rounded shadow gallery-img">
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+{% endblock %}

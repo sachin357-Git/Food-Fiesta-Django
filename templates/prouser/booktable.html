@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+
+<div class="row py-5">
+
+    <div class="col-sm-8 mx-auto">
+
+        <h1 class="text-center fw-bold mb-4">
+            Reserve Your Table
+        </h1>
+
+        {% if messages %}
+        {% for message in messages %}
+
+<div class="alert alert-danger text-center">
+    {{message}}
+</div>
+
+{% endfor %}
+{% endif %}
+
+        {% if messages %}
+        {% for message in messages %}
+
+        <div class="alert alert-success text-center">
+             {{message}}
+        </div>
+
+        {% endfor %}
+        {% endif %}
+
+
+        <div class="card shadow p-4">
+
+            <form method="post">
+                {% csrf_token %}
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <input type="text" 
+                        class="form-control"
+                        name="name"
+                        placeholder="Enter Your Name"
+                        required>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <input type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Enter Email"
+                        required>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <input type="number"
+                        class="form-control"
+                        name="phone"
+                        placeholder="Phone Number"
+                        required>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <input type="number"
+                        class="form-control"
+                        name="guests"
+                        placeholder="Number of Guests"
+                        required>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <input type="date"
+                        class="form-control"
+                        name="date"
+                        placeholder="Select Date"
+                        required>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <input type="time"
+                        class="form-control"
+                        name="time"
+                        placeholder="Select Time"
+                        required>
+                    </div>
+
+
+                    <div class="col-sm-12">
+                        <textarea class="form-control txta"
+                        name="message"
+                        placeholder="Special Request"></textarea>
+                    </div>
+
+
+                    <div class="col-sm-12 text-center">
+
+                        <button type="submit" class="btn btn-warning px-5">
+                            Book Table
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

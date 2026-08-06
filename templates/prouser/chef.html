@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block childpage %}
+
+<div class="row py-5">
+
+    <div class="col-sm-10 mx-auto">
+
+        <h1 class="text-center fw-bold">
+            Our Professional Chefs
+        </h1>
+
+        <p class="text-center">
+            Meet our talented chefs who create delicious dishes for you.
+        </p>
+
+
+        <div class="row mt-4">
+
+
+            <div class="col-sm-4 p-3">
+
+                <div class="card shadow rounded-4 overflow-hidden text-center">
+
+                    <img src="{% static 'images/chef1.jpg' %}"
+                    class="card-img-top chef-img">
+
+                    <div class="card-body">
+
+                        <h3>
+                            Chef Rahul
+                        </h3>
+
+                        <p>
+                            Italian Food Specialist
+                        </p>
+
+                        <small class="text-muted">
+                            8 Years Experience
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-sm-4 p-3">
+
+                <div class="card shadow rounded-4 overflow-hidden text-center">
+
+                    <img src="{% static 'images/chef2.jpg' %}"
+                    class="card-img-top chef-img">
+
+                    <div class="card-body">
+
+                        <h3>
+                            Chef Aman
+                        </h3>
+
+                        <p>
+                            Indian Cuisine Expert
+                        </p>
+                        
+                        <small class="text-muted">
+                            10 Years Experience
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-sm-4 p-3">
+
+                <div class="card shadow rounded-4 overflow-hidden text-center">
+
+                    <img src="{% static 'images/chef3.jpg' %}"
+                    class="card-img-top chef-img">
+
+                    <div class="card-body">
+
+                        <h3>
+                            Chef Priya
+                        </h3>
+
+                        <p>
+                            Dessert Specialist
+                        </p>
+
+                        <small class="text-muted">
+                            5 Years Experience
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
