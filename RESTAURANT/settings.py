@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-(jw5(k_sv+5m96-n!d^p+t8!i&k8p-4we4y29y-86)-wb&g=o8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "food-fiesta-django.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
